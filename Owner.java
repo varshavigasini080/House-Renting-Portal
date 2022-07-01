@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class Owner {
@@ -8,11 +7,9 @@ public class Owner {
     Scanner sc = new Scanner(System.in);
    
     public void rentalDetails(){
-        
         houses.add( new ArrayList<>(Arrays.asList("Kodambakkam","Chennai","798","2BHK","Rs.6000/Month","1","0","0")));
         houses.add( new ArrayList<>(Arrays.asList("Goripalayam","Madurai","500","1BHK","Rs.5500/Month","2","0","0")));
         houses.add( new ArrayList<>(Arrays.asList("Anna Nagar","Chennai","1208","3BHK","Rs.15000/Month","3","0","0")));
-
     }
     public void displayHistory(){
         if(history.empty()){
@@ -21,7 +18,6 @@ public class Owner {
         else{
            System.out.println(Arrays.toString(history.toArray()));
         }
-       
     }
     public void displayHouses(){
         System.out.println("Locality-City-Sqrft-Type-RentAmount-OwnerId");
@@ -31,7 +27,6 @@ public class Owner {
             }
             System.out.println();
         }
-
     }
     public void displayHouseBasedOnCity(String city){
         System.out.println("Locality-City-Sqrft-Type-RentAmount-OwnerId");
@@ -41,7 +36,6 @@ public class Owner {
                     System.out.print(values.get(i)+" ");
                 }
                 System.out.println();
-
             }
         }
     }
@@ -75,7 +69,6 @@ public class Owner {
                     System.out.print(values.get(i)+" ");
                 }
                 System.out.println();
-
             }
         }
     }
@@ -85,16 +78,14 @@ public class Owner {
             System.out.println("No Requests");
         }
         else{
-        for(ArrayList<String> values : reqList){
-            System.out.println(values);
-            System.out.println("Do you want to accept the request? y/n");
-            String reqFlag=sc.next();
-            if(reqFlag.equalsIgnoreCase("y")){
-                approveRequest(ownid, values.get(reqList.size()-1));
-            } 
-
+            for(ArrayList<String> values : reqList){
+                System.out.println(values);
+                System.out.println("Do you want to accept the request? y/n");
+                String reqFlag=sc.next();
+                if(reqFlag.equalsIgnoreCase("y")){
+                    approveRequest(ownid, values.get(reqList.size()-1));
+                } 
           }
-
           reqList.clear();
         }
     }
@@ -110,7 +101,7 @@ public class Owner {
         }
     }
     public static void main(String[] args){
-       
+       //main method
     }
     
 }
