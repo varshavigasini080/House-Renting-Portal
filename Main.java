@@ -48,7 +48,6 @@ public class Main {
                     }
                     }
                     break;
-                
                 }
                 
                 case 2:{
@@ -100,12 +99,7 @@ public class Main {
                     }
                     break;
                 }
-                
-
-
             }
-          
         }
-    }
-    
+    } 
 }
