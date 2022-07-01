@@ -12,12 +12,10 @@ public class Approver {
                 owner.houses.add(addHouse);
                 System.out.println(addHouse);
                 System.out.println(owner.houses.get(owner.houses.size()-1));
-
             }
             System.out.println("Status: Approved\nHouse added");
             houseList.clear();
         }
-        
     }
     public void displayHouseReqApr(){
         if(houseList.isEmpty()){
@@ -31,11 +29,9 @@ public class Approver {
                 }
                 System.out.println();
             }
-        }
-        
+        } 
     }
     public static void main(String[] args){
-        
+        //main method
     }
-    
 }
